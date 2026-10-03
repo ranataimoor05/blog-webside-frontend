@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes from a Life in Progress</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for Editorial Look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Notes from a<br>Life in Progress</h1>
+            <p>Thoughts, stories, and musings updated every so often.</p>
+            <a href="#latest" class="btn btn-light">Read more</a>
+        </div>
+    </header>
+
+    <!-- Intro and Latest Musings Section -->
+    <section class="split-section intro-musings">
+        <!-- Left: Dark Background -->
+        <div class="split-pane dark-pane intro-pane">
+            <h2>Hey, I'm Eliana</h2>
+            <p>Welcome to my little corner of the internet. Here I share bits and pieces of my everyday life, travels, and creative projects.</p>
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Eliana smiling" class="profile-img">
+            <a href="#about" class="btn btn-light">Say hello</a>
+        </div>
+        
+        <!-- Right: Light Background -->
+        <div class="split-pane light-pane musings-pane" id="latest">
+            <h2>Latest Musings</h2>
+            <div class="musing-item">
+                <img src="https://images.unsplash.com/photo-1500622944204-b135684e99fd?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Yellow flowers">
+                <p>On finding peace in nature</p>
+            </div>
+            <div class="musing-item">
+                <img src="https://images.unsplash.com/photo-1444464666168-49b626422849?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Person running">
+                <p>The joy of slow mornings</p>
+            </div>
+            <div class="musing-item">
+                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Mountains">
+                <p>Why I started hiking on weekends</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual and Newsletter Section -->
+    <section class="split-section visual-newsletter">
+        <!-- Left: Image -->
+        <div class="split-pane image-pane">
+            <img src="https://images.unsplash.com/photo-1521747116042-5a810fda9664?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Couple walking in field" class="full-img">
+        </div>
+        
+        <!-- Right: Newsletter -->
+        <div class="split-pane dark-pane newsletter-pane bg-floral">
+            <div class="newsletter-content">
+                <h2>Stay in the loop</h2>
+                <p>Sign up for my newsletter and never miss an update from my journey.</p>
+                <form id="subscribe-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-full">Subscribe</button>
+                </form>
+                <p class="small-text">No spam, just the good stuff.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="about-me" id="about">
+        <div class="about-content">
+            <h2>About me</h2>
+            <p>I am an avid reader and aspiring writer. What started as a hobby of documenting small, beautiful moments turned into this space. I am a firm believer in embracing works in progress, and I hope you find some inspiration, comfort, or joy among the words and images here.</p>
+        </div>
+    </section>
+
+    <!-- Life Lately Section -->
+    <section class="split-section life-lately">
+        <!-- Left: Image -->
+        <div class="split-pane image-pane">
+            <img src="https://images.unsplash.com/photo-1516245836543-2af3e98cd01b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Woman near willow trees" class="full-img">
+        </div>
+        
+        <!-- Right: Dark Background -->
+        <div class="split-pane dark-pane text-pane">
+            <h2>Life Lately</h2>
+            <p class="subtitle">Embracing the shift in seasons.</p>
+            <p>Lately, everything has felt like a transition. The leaves are changing, the air is getting crisper, and my daily routines are shifting to match.</p>
+            <p>I've been spending more time indoors, brewing tea, and finally catching up on the pile of books that has been sitting on my nightstand for months. There is a specific kind of quiet that comes with this time of year, and I'm learning to lean into it rather than rush past it.</p>
+            <a href="#" class="btn btn-light">Read more</a>
+        </div>
+    </section>
+
+    <!-- Contact Footer Section -->
+    <footer class="contact-footer">
+        <div class="footer-content">
+            <h2>Say hello</h2>
+            <p>Whether you have a question, want to work together, or just want to say hi, I'd love to hear from you.</p>
+            <form id="contact-form">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Your Message..." rows="4" required></textarea>
+                <button type="submit" class="btn btn-full">Send Message</button>
+            </form>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

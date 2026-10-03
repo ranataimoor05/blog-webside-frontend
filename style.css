@@ -1,0 +1,261 @@
+/* CSS Variables */
+:root {
+    --color-dark: #070908;
+    --color-light: #f6f7eb;
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Lora', serif;
+    --transition: all 0.3s ease;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+/* Typography specifics based on the layout */
+h1 {
+    font-size: 4.5rem;
+    font-style: italic;
+    line-height: 1.1;
+}
+
+h2 {
+    font-size: 2.8rem;
+    font-style: italic;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    transition: var(--transition);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-light {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+}
+
+.btn-light:hover {
+    background-color: #e5e6d6;
+    transform: translateY(-2px);
+}
+
+.btn-full {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    width: 100%;
+}
+
+.btn-full:hover {
+    background-color: #222;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--color-light);
+}
+
+.hero-content p {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+/* Split Sections Layout */
+.split-section {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 80vh;
+}
+
+.split-pane {
+    flex: 1 1 50%;
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dark-pane {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}
+
+.light-pane {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+}
+
+.image-pane {
+    padding: 0;
+}
+
+.full-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Specific Section Adjustments */
+.intro-pane img.profile-img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    margin: 2rem 0;
+}
+
+.musing-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.musing-item:hover {
+    transform: translateX(10px);
+}
+
+.musing-item img {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 1.5rem;
+}
+
+.musing-item p {
+    font-size: 1.1rem;
+    font-family: var(--font-heading);
+}
+
+/* Newsletter section with blurred background effect */
+.bg-floral {
+    position: relative;
+    z-index: 1;
+}
+
+.bg-floral::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url('https://images.unsplash.com/photo-1507646871587-57351658b495?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80') center/cover;
+    opacity: 0.3;
+    z-index: -1;
+    filter: blur(4px);
+}
+
+.newsletter-content {
+    background: rgba(246, 247, 235, 0.9);
+    padding: 3rem;
+    border-radius: 5px;
+    text-align: center;
+    color: var(--color-dark);
+}
+
+input[type="email"], input[type="text"], textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    border: 1px solid #ccc;
+    background: transparent;
+    font-family: var(--font-body);
+}
+
+/* About Me Section */
+.about-me {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: var(--color-light);
+    padding: 15% 10%;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* Contact Footer Section */
+.contact-footer {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1597848212624-a19eb35e2651?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    color: var(--color-light);
+    padding: 10% 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    background: rgba(246, 247, 235, 0.95);
+    padding: 4rem;
+    color: var(--color-dark);
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+    
+    .split-pane {
+        flex: 1 1 100%;
+        padding: 15% 10%;
+    }
+
+    .image-pane {
+        min-height: 400px;
+    }
+    
+    .footer-content {
+        padding: 2rem;
+    }
+}
